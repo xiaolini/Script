@@ -1,0 +1,26 @@
+# configure text
+# 配置文件规则：
+#              每行仅一个参数值
+#              行首字符为 # 号的行为注释行
+#              如果一行中不包含 = 号 则默认该行为注释行
+#              参数名字与参数值用 = 号连接
+#              参数名称中不能包含 = 号
+#              每行最大字符数为 LINE_MAX_LENGTH:256
+#              参数名称最大字符数为 NAME_MAX_LENGTH:40,超长将丢弃该参数
+#              参数值最大字符数为 VALUE_MAX_LENGTH:40,超长将截断
+#              参数值从 = 号后开始计算,不去除空格
+
+#控制端IP
+ControIP=172.16.100.27
+
+#agent for commands
+ServerPort=6789
+
+#control sever for agent ip
+ServerPortIP=6790
+
+#control sever for the results of agent attack
+ServerPortResult=6791
+
+#攻击端ip发送的间隔时间,单位秒s
+WaitTime=300
